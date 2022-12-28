@@ -1,0 +1,31 @@
+<header>
+  <a routerLink="/" style="display:inline;margin-right:10px" class="Button">Главная</a>
+  <a routerLink="/cars" style="display:inline;margin-right:10px" class="Button">Автомобили</a>
+  <a routerLink="/add/car" style="display:inline;margin-right:10px" class="Button">Добавить автомобиль</a>
+  <a routerLink="/about" style="display:inline;"class="Button">Обо мне</a>
+ 
+</header>
+<router-outlet></router-outlet>
+<style>
+  body {
+  background: #d6eaf8;
+}
+.Button {
+  text-decoration: none;
+  display: inline-block;
+  color: white;
+  padding: 10px 15px;
+  margin: 10px 15px;
+  border-radius: 7px;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background-image: linear-gradient(to right, #9EEFE1 0%, #4830F0 51%, #9EEFE1 100%);
+  background-size: 50% auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+  transition: .5s;
+}
+.gradient-button:hover {
+  background-position: right center;
+}
+</style>
